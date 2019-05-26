@@ -1,4 +1,4 @@
 My Online Resume
 ===================
 
-[Click](output/resume.html)
+[Click](https://goksinan.github.io/online_resume/output/resume.html)
