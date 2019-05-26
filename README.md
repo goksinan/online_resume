@@ -1,4 +1,4 @@
 My Online Resume
 ===================
 
-[Click](git
+[Click](output/resume.html)
