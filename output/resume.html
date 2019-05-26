@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>resume</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+  /*
+   * Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
+   *
+   * CSS for making a resume with pandoc. Inspired by moderncv.
+   *
+   * This CSS document is delivered to you under the CC BY-SA 3.0 License.
+   * https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+   */
+  
+  /* Whole document */
+  body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      background: #FFFFFF;
+      padding: 10px 10px 10px 10px;
+  }
+  
+  /* Title of the resume */
+  h1 {
+      font-size: 55px;
+      color: #757575;
+      text-align:center;
+      margin-bottom:15px;
+  }
+  h1:hover {
+      background-color: #757575;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 1px #333;
+  }
+  
+  /* Titles of categories */
+  h2 {
+      /* This is called "sectioncolor" in the ConTeXt stylesheet. */
+      color: #397249;
+  }
+  /* There is a bar just before each category */
+  h2:before {
+      content: "";
+      display: inline-block;
+      margin-right:1%;
+      width: 16%;
+      height: 10px;
+      /* This is called "rulecolor" in the ConTeXt stylesheet. */
+      background-color: #9CB770;
+  }
+  h2:hover {
+      background-color: #397249;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 1px #333;
+  }
+  
+  /* Definitions */
+  dt {
+      float: left;
+      clear: left;
+      width: 17%;
+      /*font-weight: bold;*/
+  }
+  dd {
+      margin-left: 17%;
+  }
+  p {
+      margin-top:0;
+      margin-bottom:7px;
+  }
+  
+  /* Blockquotes */
+  blockquote {
+      text-align: center
+  }
+  
+  /* Links */
+  a {
+      text-decoration: none;
+      color: #397249;
+  }
+  a:hover, a:active {
+      background-color: #397249;
+      color: #FFFFFF;
+      text-decoration: none;
+      text-shadow: 1px 1px 1px #333;
+  }
+  
+  /* Horizontal separators */
+  hr {
+      color: #A6A6A6;
+  }
+  
+  table {
+      width: 100%;
+  }
+  </style>
+</head>
+<body>
+<h1 id="sinan-gok-phd">Sinan Gok, PhD</h1>
+<hr />
+<blockquote>
+<p>“Work hard, be kind, and amazing things will happen.” Conan O’Brien</p>
+</blockquote>
+<hr />
+<h2 id="key-skills">Key Skills</h2>
+<ul>
+<li>Over 6 years of experience developing medical instrumentation tools and techniques to collect real-time electrophysiological data (<a href="https://web.njit.edu/~sahin/" target="_blank">NPL Lab</a>).</li>
+<li>In-depth knowledge of brain-computer interfaces, neural control of movement, and mechanisms of neuromodulation.</li>
+<li>Experience in biomedical signal processing, machine learning and predictive modelling, and exposure to statistical analysis techniques.</li>
+<li>Ability to gather and interpret information, learn quickly, analyze data, manage a project, communicate with peers, present ideas, and think in an innovative and creative manner.</li>
+<li>MATLAB, LabVIEW, Python, R, PTC Pro Engineer, Git/GitHub, Jekyll.</li>
+</ul>
+<hr />
+<h2 id="education">Education</h2>
+<dl>
+<dt>2012-2018</dt>
+<dd><p><strong>PhD, Biomedical Engineering</strong>; New Jersey Institute of Technology (NJIT) &amp; Rutgers University (Newark, NJ) - Joint PhD Program</p>
+<p><em>Thesis title: Prediction of Forelimb Muscle Activities and Movement Phases Using the Corticospinal Signals in the Rat</em></p>
+</dd>
+<dt>2009-2011</dt>
+<dd><strong>MS, Electrical Engineering</strong>; Lehigh University (Bethlehem, PA)
+</dd>
+</dl>
+<hr />
+<h2 id="experience">Experience</h2>
+<dl>
+<dt>2018-2019</dt>
+<dd><p><em>Postdoctoral Research Associate,</em> NJIT</p>
+<ul>
+<li><strong>Project Management:</strong> Planning and coordination of research activities including distribution of tasks, manufacturing devices, conducting experiments, collecting, analyzing and reporting data.</li>
+<li><strong>Data Collection:</strong> Utilizing NIdaq devices (National Instruments Inc.) to acquire electrophysiological signals in real time. Collecting video images (Allied Vision Inc.) for offline movement analysis.</li>
+<li><strong>Data Analysis:</strong> Offline analysis of experimental data to evaluate the effects of electrical stimulation on brain signals.</li>
+<li><strong>Mentoring:</strong> Supervising laboratory personnel.</li>
+</ul>
+</dd>
+<dt>2012-2016</dt>
+<dd><p><em>Research Engineer,</em> NJIT/Rutgers</p>
+<ul>
+<li><strong>System Design:</strong> Designed and built a data recording system for real time biological and video signal acquisition. Used PTC Pro Engineer to design and print 3D parts as needed. The system monitored a force sensor to automatically detect a behavioral task and store data using a FIFO buffer.</li>
+<li><strong>Supervised Learning (Classification):</strong> Classified forelimb extension and flexion movements using spinal cord signals recorded in rats. LDA, KNN, SVM, Naïve Bayes, and Random Forest algorithms were tested and compared for their classification performance.</li>
+<li><strong>Supervised Learning (Regression):</strong> Forelimb electromyography (EMG) signals were predicted from the spinal cord signals in rats. Multiple Linear Regression algorithm was used.</li>
+<li><strong>Image Processing:</strong> Video images of test subjects (rats) analyzed for movement identification. Custom written MATLAB scripts were used to read and analyze video recordings frame by frame.</li>
+<li><strong>Academic:</strong> Published research papers and presented academic work in national and international conferences. Tutored high school, undergraduate, and graduate students in summer research and school projects.</li>
+</ul>
+</dd>
+<dt>Spring 2015</dt>
+<dd><p><em>Adjunct Instructor,</em> The College of New Jersey</p>
+<ul>
+<li><strong>Teaching:</strong> Instructor for 400-level Bioinstrumentation Laboratory. Explained the principles of medical instrumentation such as, sampling, analog and digital signal processing, filtering and noise cancelling.</li>
+<li><strong>Laboratory:</strong> Taught how to use data acquisition systems and software tools to record and process biophysiological signals, such as ECG, EOG, and EMG.</li>
+</ul>
+</dd>
+</dl>
+<hr />
+<h2 id="achievements">Achievements</h2>
+<ul>
+<li><strong>Spinal cord injury research techniques training grant:</strong> Sponsored by the New Jersey Commission on Spinal Cord Research (NJCSCR). April 2017, Trenton, NJ.</li>
+<li><strong>NIH-supported summer course selectee:</strong> Organized by National Center for Adaptive Neurotechnologies (NCAN). July 2017, Albany, NY.</li>
+<li><strong>Student travel award:</strong> For giving a talk at the 38th IEEE EMBS conference. Sponsored by the Graduate Student Association at NJIT. October 2016, Newark, NJ.</li>
+<li><strong>Student travel award:</strong> Sponsored by the NIH with support from BCI society and its affiliates. International Brain Computer Interface Meeting, May 2016, Pacific Grove, CA.</li>
+<li><strong>Graduate assistantship:</strong> Biomedical Engineering Dept. at NJIT, 2014-2018, Newark, NJ.</li>
+<li><strong>Full scholarship:</strong> For Master’s education in the US offered by the Turkish Ministry of Higher Education, 2009, Turkey.</li>
+</ul>
+<hr />
+<h2 id="journal-articles">Journal Articles</h2>
+<ul>
+<li><strong>S. Gok</strong> and M. Sahin, “Prediction of forelimb EMGs and movement phases from corticospinal signals in the rat during the reach-to-pull task,” International Journal of Neural Systems, Feb. 2019 (In press).</li>
+<li>A.S. Asan, <strong>S. Gok</strong>, and M. Sahin, “Electrical Fields Induced Inside the Rat Brain with Skin, Skull, and Dural Placements of the Current Injection Electrode,” PLoS ONE, Jan. 2019.</li>
+<li>Y. Guo, <strong>S. Gok</strong>, and M. Sahin, “Convolutional networks outperform linear decoders in predicting EMG from spinal cord signals,” Frontiers in Neuroscience, 2018.</li>
+</ul>
+<hr />
+<h2 id="conference-papers">Conference Papers</h2>
+<ul>
+<li>S. Asan, <strong>S. Gok</strong>, and M. Sahin, “Electric fields induced by transcutaneous and intracranial current injections in the rat brain,” 40th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), Honolulu, HI, 2018.</li>
+<li>E. Cetinkaya, <strong>S. Gok</strong>, and M. Sahin, “Carbon-fiber electrodes for in vivo spinal cord recordings,” 40th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), Honolulu, HI, 2018.</li>
+<li><strong>S. Gok</strong> and M. Sahin, “Rat forelimb movement components segregated by corticospinal tract activity,” in International IEEE/EMBS Conference on Neural Engineering, NER, 2017, pp. 312–315.</li>
+<li><strong>S. Gok</strong> and M. Sahin, “Prediction of forelimb muscle EMGs from the corticospinal signals in rats,” in Proceedings of the Annual International Conference of the IEEE Engineering in Medicine and Biology Society, EMBS, 2016, vol. 2016– October, pp. 2780–2783. (Oral presentation)</li>
+</ul>
+<hr />
+<h2 id="presentations">Presentations</h2>
+<ul>
+<li>E. Cetinkaya, <strong>S. Gok</strong>, and M. Sahin. “Carbon fiber electrodes for recording spinal cord activity in rats,” presented at the BMES 2017 Annual Meeting, 2017, Phoenix, AZ.</li>
+<li><strong>S. Gok</strong> and M. Sahin. “Predicting forelimb muscle activity from corticospinal signals in rats,” presented at the 6th International Brain Computer Interface Meeting, 2016, Pacific Grove, CA.</li>
+<li><strong>S. Gok</strong>, H. Charkhkar, J. Pancrazio, and M. Sahin. “In vivo impedance characterization of PEDOT:TFB coated and chronically implanted multi electrode arrays,” presented at the BMES Annual Meeting, 2015, Tampa, FL.</li>
+<li><strong>S. Gok</strong> and M. Sahin. “A method of chronic neural recording from rat cortico-spinal tract using flexible multi-electrode arrays,” presented at the 41st Neural Interfaces Conference June 2014, Dallas, TX.</li>
+</ul>
+<hr />
+<h2 id="professional-development">Professional Development</h2>
+<ul>
+<li><strong>Springboard Data Science Bootcamp:</strong> First half of an intensive program introducing data science. Online, 2018.</li>
+<li><strong>Spinal Cord Injury Research Methods Workshop:</strong> W.M. Keck Center for Collaborative Neuroscience at Rutgers University, October 2017, Piscataway, NJ.</li>
+<li><strong>A Science and Technology Career Symposium:</strong> “What can you be with a PhD?” NYU School of Medicine, November 2017, New York, NY</li>
+<li><strong>Workshop on Peer Review Process:</strong> “You, Too, Can Peer Review!” by Angela Welch, PhD – Elsevier, March 2017, New York Academy of Sciences, New York, NY</li>
+<li><strong>Grant Writing Workshop:</strong> Presented by: Rick McGee, PhD., Rutgers Robert Wood Johnson Medical School, February 2017, Piscataway, NJ</li>
+<li><strong>Workshop on Neural Signal Processing Methods:</strong> Organized by Rutgers Brain Health Institute, April 2016, NJIT, Newark, NJ</li>
+<li><strong>The First Annual Rutgers Brain Health Institute Symposium:</strong> St. Peter’s University, October 2015, Jersey City, NJ</li>
+<li><strong>Fifth Annual Current Advances in Spinal Cord Injury Research Symposium:</strong> Reynolds Family Spine Laboratory, May 2015, Newark, NJ</li>
+<li><strong>Workshop on Quantifying Structure in Large Neural Datasets:</strong> Columbia University, September 2014, New York, NY</li>
+</ul>
+<hr />
+<blockquote>
+<p>Sinan Gok • Bloomfield, NJ, USA <a href="mailto:email@example.com" class="email">email@example.com</a> • +00 (0)00 000 0000 • XX years old<br />
+address - Mytown, Mycountry</p>
+</blockquote>
+</body>
+</html>

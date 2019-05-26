@@ -1,0 +1,340 @@
+% Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
+% Copyright 2014 Mark Szepieniec <http://github.com/mszep>
+% 
+% ConText style for making a resume with pandoc. Inspired by moderncv.
+% 
+% This CSS document is delivered to you under the CC BY-SA 3.0 License.
+% https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+
+\startmode[*mkii]
+  \enableregime[utf-8]  
+  \setupcolors[state=start]
+\stopmode
+
+\setupcolor[hex]
+\definecolor[titlegrey][h=757575]
+\definecolor[sectioncolor][h=397249]
+\definecolor[rulecolor][h=9cb770]
+
+% Enable hyperlinks
+\setupinteraction[state=start, color=sectioncolor]
+
+\setuppapersize [A4][A4]
+\setuplayout    [width=middle, height=middle,
+                 backspace=20mm, cutspace=0mm,
+                 topspace=10mm, bottomspace=20mm,
+                 header=0mm, footer=0mm]
+
+%\setuppagenumbering[location={footer,center}]
+
+\setupbodyfont[11pt, helvetica]
+
+\setupwhitespace[medium]
+
+\setupblackrules[width=31mm, color=rulecolor]
+
+\setuphead[chapter]      [style=\tfd]
+\setuphead[section]      [style=\tfd\bf, color=titlegrey, align=middle]
+\setuphead[subsection]   [style=\tfb\bf, color=sectioncolor, align=right,
+                          before={\leavevmode\blackrule\hspace}]
+\setuphead[subsubsection][style=\bf]
+
+\setuphead[chapter, section, subsection, subsubsection][number=no]
+
+%\setupdescriptions[width=10mm]
+
+\definedescription
+  [description]
+  [headstyle=bold, style=normal,
+   location=hanging, width=18mm, distance=14mm, margin=0cm]
+
+\setupitemize[autointro, packed]    % prevent orphan list intro
+\setupitemize[indentnext=no]
+
+\setupfloat[figure][default={here,nonumber}]
+\setupfloat[table][default={here,nonumber}]
+
+\setuptables[textwidth=max, HL=none]
+\setupxtable[frame=off,option={stretch,width}]
+
+\setupthinrules[width=15em] % width of horizontal rules
+
+\setupdelimitedtext
+  [blockquote]
+  [before={\setupalign[middle]},
+   indentnext=no,
+  ]
+
+
+\starttext
+
+\section[title={Sinan Gok, PhD},reference={sinan-gok-phd}]
+
+\thinrule
+
+\startblockquote
+\quotation{Work hard, be kind, and amazing things will happen.} Conan
+O'Brien
+\stopblockquote
+
+\thinrule
+
+\subsection[title={Key Skills},reference={key-skills}]
+
+\startitemize[packed]
+\item
+  Over 6 years of experience developing medical instrumentation tools
+  and techniques to collect real-time electrophysiological data
+  (\useURL[url1][https://web.njit.edu/~sahin/][][NPL Lab]\from[url1]).
+\item
+  In-depth knowledge of brain-computer interfaces, neural control of
+  movement, and mechanisms of neuromodulation.
+\item
+  Experience in biomedical signal processing, machine learning and
+  predictive modelling, and exposure to statistical analysis techniques.
+\item
+  Ability to gather and interpret information, learn quickly, analyze
+  data, manage a project, communicate with peers, present ideas, and
+  think in an innovative and creative manner.
+\item
+  MATLAB, LabVIEW, Python, R, PTC Pro Engineer, Git/GitHub, Jekyll.
+\stopitemize
+
+\thinrule
+
+\subsection[title={Education},reference={education}]
+
+\startdescription{2012-2018}
+  {\bf PhD, Biomedical Engineering}; New Jersey Institute of Technology
+  (NJIT) & Rutgers University (Newark, NJ) - Joint PhD Program
+
+  {\em Thesis title: Prediction of Forelimb Muscle Activities and
+  Movement Phases Using the Corticospinal Signals in the Rat}
+\stopdescription
+
+\startdescription{2009-2011}
+  {\bf MS, Electrical Engineering}; Lehigh University (Bethlehem, PA)
+\stopdescription
+
+\thinrule
+
+\subsection[title={Experience},reference={experience}]
+
+\startdescription{2018-2019}
+  {\em Postdoctoral Research Associate,} NJIT
+
+  \startitemize[packed]
+  \item
+    {\bf Project Management:} Planning and coordination of research
+    activities including distribution of tasks, manufacturing devices,
+    conducting experiments, collecting, analyzing and reporting data.
+  \item
+    {\bf Data Collection:} Utilizing NIdaq devices (National Instruments
+    Inc.) to acquire electrophysiological signals in real time.
+    Collecting video images (Allied Vision Inc.) for offline movement
+    analysis.
+  \item
+    {\bf Data Analysis:} Offline analysis of experimental data to
+    evaluate the effects of electrical stimulation on brain signals.
+  \item
+    {\bf Mentoring:} Supervising laboratory personnel.
+  \stopitemize
+\stopdescription
+
+\startdescription{2012-2016}
+  {\em Research Engineer,} NJIT/Rutgers
+
+  \startitemize[packed]
+  \item
+    {\bf System Design:} Designed and built a data recording system for
+    real time biological and video signal acquisition. Used PTC Pro
+    Engineer to design and print 3D parts as needed. The system
+    monitored a force sensor to automatically detect a behavioral task
+    and store data using a FIFO buffer.
+  \item
+    {\bf Supervised Learning (Classification):} Classified forelimb
+    extension and flexion movements using spinal cord signals recorded
+    in rats. LDA, KNN, SVM, Naïve Bayes, and Random Forest algorithms
+    were tested and compared for their classification performance.
+  \item
+    {\bf Supervised Learning (Regression):} Forelimb electromyography
+    (EMG) signals were predicted from the spinal cord signals in rats.
+    Multiple Linear Regression algorithm was used.
+  \item
+    {\bf Image Processing:} Video images of test subjects (rats)
+    analyzed for movement identification. Custom written MATLAB scripts
+    were used to read and analyze video recordings frame by frame.
+  \item
+    {\bf Academic:} Published research papers and presented academic
+    work in national and international conferences. Tutored high school,
+    undergraduate, and graduate students in summer research and school
+    projects.
+  \stopitemize
+\stopdescription
+
+\startdescription{Spring 2015}
+  {\em Adjunct Instructor,} The College of New Jersey
+
+  \startitemize[packed]
+  \item
+    {\bf Teaching:} Instructor for 400-level Bioinstrumentation
+    Laboratory. Explained the principles of medical instrumentation such
+    as, sampling, analog and digital signal processing, filtering and
+    noise cancelling.
+  \item
+    {\bf Laboratory:} Taught how to use data acquisition systems and
+    software tools to record and process biophysiological signals, such
+    as ECG, EOG, and EMG.
+  \stopitemize
+\stopdescription
+
+\thinrule
+
+\subsection[title={Achievements},reference={achievements}]
+
+\startitemize[packed]
+\item
+  {\bf Spinal cord injury research techniques training grant:} Sponsored
+  by the New Jersey Commission on Spinal Cord Research (NJCSCR). April
+  2017, Trenton, NJ.
+\item
+  {\bf NIH-supported summer course selectee:} Organized by National
+  Center for Adaptive Neurotechnologies (NCAN). July 2017, Albany, NY.
+\item
+  {\bf Student travel award:} For giving a talk at the 38th IEEE EMBS
+  conference. Sponsored by the Graduate Student Association at NJIT.
+  October 2016, Newark, NJ.
+\item
+  {\bf Student travel award:} Sponsored by the NIH with support from BCI
+  society and its affiliates. International Brain Computer Interface
+  Meeting, May 2016, Pacific Grove, CA.
+\item
+  {\bf Graduate assistantship:} Biomedical Engineering Dept. at NJIT,
+  2014-2018, Newark, NJ.
+\item
+  {\bf Full scholarship:} For Master's education in the US offered by
+  the Turkish Ministry of Higher Education, 2009, Turkey.
+\stopitemize
+
+\thinrule
+
+\subsection[title={Journal Articles},reference={journal-articles}]
+
+\startitemize[packed]
+\item
+  {\bf S. Gok} and M. Sahin, \quotation{Prediction of forelimb EMGs and
+  movement phases from corticospinal signals in the rat during the
+  reach-to-pull task,} International Journal of Neural Systems,
+  Feb.~2019 (In press).
+\item
+  A.S. Asan, {\bf S. Gok}, and M. Sahin, \quotation{Electrical Fields
+  Induced Inside the Rat Brain with Skin, Skull, and Dural Placements of
+  the Current Injection Electrode,} PLoS ONE, Jan.~2019.
+\item
+  Y. Guo, {\bf S. Gok}, and M. Sahin, \quotation{Convolutional networks
+  outperform linear decoders in predicting EMG from spinal cord
+  signals,} Frontiers in Neuroscience, 2018.
+\stopitemize
+
+\thinrule
+
+\subsection[title={Conference Papers},reference={conference-papers}]
+
+\startitemize[packed]
+\item
+  S. Asan, {\bf S. Gok}, and M. Sahin, \quotation{Electric fields
+  induced by transcutaneous and intracranial current injections in the
+  rat brain,} 40th Annual International Conference of the IEEE
+  Engineering in Medicine and Biology Society (EMBC), Honolulu, HI,
+  2018.
+\item
+  E. Cetinkaya, {\bf S. Gok}, and M. Sahin, \quotation{Carbon-fiber
+  electrodes for in vivo spinal cord recordings,} 40th Annual
+  International Conference of the IEEE Engineering in Medicine and
+  Biology Society (EMBC), Honolulu, HI, 2018.
+\item
+  {\bf S. Gok} and M. Sahin, \quotation{Rat forelimb movement components
+  segregated by corticospinal tract activity,} in International
+  IEEE/EMBS Conference on Neural Engineering, NER, 2017, pp.~312--315.
+\item
+  {\bf S. Gok} and M. Sahin, \quotation{Prediction of forelimb muscle
+  EMGs from the corticospinal signals in rats,} in Proceedings of the
+  Annual International Conference of the IEEE Engineering in Medicine
+  and Biology Society, EMBS, 2016, vol.~2016-- October, pp.~2780--2783.
+  (Oral presentation)
+\stopitemize
+
+\thinrule
+
+\subsection[title={Presentations},reference={presentations}]
+
+\startitemize[packed]
+\item
+  E. Cetinkaya, {\bf S. Gok}, and M. Sahin. \quotation{Carbon fiber
+  electrodes for recording spinal cord activity in rats,} presented at
+  the BMES 2017 Annual Meeting, 2017, Phoenix, AZ.
+\item
+  {\bf S. Gok} and M. Sahin. \quotation{Predicting forelimb muscle
+  activity from corticospinal signals in rats,} presented at the 6th
+  International Brain Computer Interface Meeting, 2016, Pacific Grove,
+  CA.
+\item
+  {\bf S. Gok}, H. Charkhkar, J. Pancrazio, and M. Sahin. \quotation{In
+  vivo impedance characterization of PEDOT:TFB coated and chronically
+  implanted multi electrode arrays,} presented at the BMES Annual
+  Meeting, 2015, Tampa, FL.
+\item
+  {\bf S. Gok} and M. Sahin. \quotation{A method of chronic neural
+  recording from rat cortico-spinal tract using flexible multi-electrode
+  arrays,} presented at the 41st Neural Interfaces Conference June 2014,
+  Dallas, TX.
+\stopitemize
+
+\thinrule
+
+\subsection[title={Professional
+Development},reference={professional-development}]
+
+\startitemize[packed]
+\item
+  {\bf Springboard Data Science Bootcamp:} First half of an intensive
+  program introducing data science. Online, 2018.
+\item
+  {\bf Spinal Cord Injury Research Methods Workshop:} W.M. Keck Center
+  for Collaborative Neuroscience at Rutgers University, October 2017,
+  Piscataway, NJ.
+\item
+  {\bf A Science and Technology Career Symposium:} \quotation{What can
+  you be with a PhD?} NYU School of Medicine, November 2017, New York,
+  NY
+\item
+  {\bf Workshop on Peer Review Process:} \quotation{You, Too, Can Peer
+  Review!} by Angela Welch, PhD -- Elsevier, March 2017, New York
+  Academy of Sciences, New York, NY
+\item
+  {\bf Grant Writing Workshop:} Presented by: Rick McGee, PhD., Rutgers
+  Robert Wood Johnson Medical School, February 2017, Piscataway, NJ
+\item
+  {\bf Workshop on Neural Signal Processing Methods:} Organized by
+  Rutgers Brain Health Institute, April 2016, NJIT, Newark, NJ
+\item
+  {\bf The First Annual Rutgers Brain Health Institute Symposium:}
+  St.~Peter's University, October 2015, Jersey City, NJ
+\item
+  {\bf Fifth Annual Current Advances in Spinal Cord Injury Research
+  Symposium:} Reynolds Family Spine Laboratory, May 2015, Newark, NJ
+\item
+  {\bf Workshop on Quantifying Structure in Large Neural Datasets:}
+  Columbia University, September 2014, New York, NY
+\stopitemize
+
+\thinrule
+
+\startblockquote
+Sinan Gok • Bloomfield, NJ, USA
+\useURL[url2][mailto:email@example.com][][email@example.com]\from[url2]
+• +00 (0)00 000 0000 • XX years old\crlf
+address - Mytown, Mycountry
+\stopblockquote
+
+\stoptext
